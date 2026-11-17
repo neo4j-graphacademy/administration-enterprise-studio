@@ -11,6 +11,7 @@ Supporting repository for the GraphAcademy lab
 | `studio/licenses/` | Put your `nes.license` file here (optional) |
 | `scripts/wait-for-cluster.sh` | Wait until all five servers are Enabled |
 | `scripts/create-tools-storage.sh` | Create `tools-storage` and the `tools_service` account |
+| `scripts/load-movies.sh` | Load a movies graph into the `neo4j` database |
 
 Start the cluster first, then Studio:
 
