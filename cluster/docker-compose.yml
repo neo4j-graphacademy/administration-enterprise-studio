@@ -12,8 +12,8 @@ services:
         hostname: core-1
         container_name: core-1
         ports:
-            - "7474:7474"
-            - "7687:7687"
+            - "17474:7474"
+            - "17687:7687"
         environment:
             NEO4J_AUTH: neo4j/neo4j-password
             NEO4J_ACCEPT_LICENSE_AGREEMENT: "yes"
@@ -35,8 +35,8 @@ services:
         hostname: core-2
         container_name: core-2
         ports:
-            - "17474:7474"
-            - "17687:7687"
+            - "27474:7474"
+            - "27687:7687"
         environment:
             NEO4J_AUTH: neo4j/neo4j-password
             NEO4J_ACCEPT_LICENSE_AGREEMENT: "yes"
@@ -58,8 +58,8 @@ services:
         hostname: core-3
         container_name: core-3
         ports:
-            - "27474:7474"
-            - "27687:7687"
+            - "37474:7474"
+            - "37687:7687"
         environment:
             NEO4J_AUTH: neo4j/neo4j-password
             NEO4J_ACCEPT_LICENSE_AGREEMENT: "yes"
@@ -81,8 +81,8 @@ services:
         hostname: secondary-1
         container_name: secondary-1
         ports:
-            - "37474:7474"
-            - "37687:7687"
+            - "47474:7474"
+            - "47687:7687"
         environment:
             NEO4J_AUTH: neo4j/neo4j-password
             NEO4J_ACCEPT_LICENSE_AGREEMENT: "yes"
@@ -102,8 +102,8 @@ services:
         hostname: secondary-2
         container_name: secondary-2
         ports:
-            - "47474:7474"
-            - "47687:7687"
+            - "57474:7474"
+            - "57687:7687"
         environment:
             NEO4J_AUTH: neo4j/neo4j-password
             NEO4J_ACCEPT_LICENSE_AGREEMENT: "yes"

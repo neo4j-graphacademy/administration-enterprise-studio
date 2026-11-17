@@ -15,4 +15,4 @@ neo4jDeployments:
     uri: bolt://core-1:7687
     directClientQuery:
       enabled: true
-      publicUri: bolt://localhost:7687
+      publicUri: bolt://localhost:17687
