@@ -1,0 +1,20 @@
+networks:
+    skyshard:
+        name: cluster_skyshard
+        external: true
+
+services:
+    enterprise-studio:
+        image: neo4j/enterprise-studio:latest
+        container_name: enterprise-studio
+        ports:
+            - "8080:8080"
+        environment:
+            NES_server_port: "8080"
+            NES_assetStore_default_authentication_basic_username: tools_service
+            NES_assetStore_default_authentication_basic_password: tools-password
+        volumes:
+            - ./config.yaml:/app/config.yaml:ro
+            - ./licenses:/licenses:ro
+        networks:
+            - skyshard

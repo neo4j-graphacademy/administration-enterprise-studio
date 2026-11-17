@@ -1,0 +1,6 @@
+.DS_Store
+cypher/
+data/
+.env
+studio/licenses/*
+!studio/licenses/.gitkeep

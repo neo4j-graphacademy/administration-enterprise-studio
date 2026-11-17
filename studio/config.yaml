@@ -1,0 +1,18 @@
+version: 1
+kind: neo4j-enterprise-studio-config
+
+license:
+  path: /licenses/nes.license
+
+assetStore:
+  default:
+    uri: neo4j://core-1:7687
+    database: tools-storage
+
+neo4jDeployments:
+  cluster:
+    name: Docker cluster
+    uri: bolt://core-1:7687
+    directClientQuery:
+      enabled: true
+      publicUri: bolt://localhost:7687
