@@ -4,3 +4,4 @@ data/
 .env
 studio/licenses/*
 !studio/licenses/.gitkeep
+STUDIO_LINK.txt

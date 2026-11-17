@@ -28,6 +28,8 @@ The credentials in these files are for local demos only.
 
 ## Codespaces caveat
 
+In a Codespace, `STUDIO_LINK.txt` holds the address to open for Studio, and every new terminal prints it. Studio itself is only reachable once you have started it (`docker compose -f studio/docker-compose.yml up -d`).
+
 Studio's `directClientQuery` makes the **browser** open a Bolt connection to `publicUri`, which is `bolt://localhost:17687` in `studio/config.yaml`. That address only works when the browser and Docker run on the same machine. In a browser-based Codespace the browser runs on your own machine, and Codespaces exposes each forwarded port at its own HTTPS address instead:
 
 ```text
